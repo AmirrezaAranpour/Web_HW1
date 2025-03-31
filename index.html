@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محاسبات آنی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <label for="fee">قیمت واحد:</label>
+    <input type="text" id="fee" placeholder="قیمت واحد">
+  </div>
+  <div>
+    <label for="count">تعداد:</label>
+    <input type="text" id="count" placeholder="تعداد">
+  </div>
+  <div>
+    <label for="discount">تخفیف:</label>
+    <input type="text" id="discount" placeholder="تخفیف">
+  </div>
+
+  <div>
+    <p>نتیجه فرمول اول:</p>
+    <div class="formula" evaluator="count*fee-discount" readonly></div>
+  </div>
+  <div>
+    <p>نتیجه فرمول دوم:</p>
+    <div class="formula" evaluator="fee*(count-discount)" readonly></div>
+  </div>
+  <div>
+    <p>نتیجه فرمول سوم:</p>
+    <div class="formula" evaluator="fee*count+discount" readonly></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
